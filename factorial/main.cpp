@@ -25,8 +25,14 @@ int factorial(int a){
 int main(){
     cout << "Obtengamos el factorial" << endl;
     int n;
-    cout << "Por favor ingrese un número entero"<<endl;
-    cin >> n;
+    double c;
+    cout << "Por favor ingrese un número entero"<<endl;       cin >> c; 
+    n = (int)c;
+    while(c!=n){
+        cout<<"¡DIJE NÚMERO ENTERO! Intente de nuevo, por favor"<<endl;
+        cin >> c;
+        n = (int)c;
+    }
     cout << "El número es: " << n << endl;
     
     cout << n << "! = "<< factorial(n) <<endl;
