@@ -9,7 +9,7 @@ if [[ $REPLY =~ ^[Yy]$ ]]
         read v0
     elif [[ $REPLY =~ ^[Nn]$ ]]
     then
-        h0=7.5
+        h0=8.5
         v0=20
     else
         echo "WROOOOONG"
